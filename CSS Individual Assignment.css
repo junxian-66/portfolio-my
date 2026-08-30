@@ -111,6 +111,39 @@ nav a:hover{
   background-color: #FFFFFF;
 }
 
+.about-wrapper{
+  display: flex;
+  align-items: center;
+  gap: 40px;
+}
+
+.profile-photo-frame{
+  background-color: #FFFFFF;
+  padding: 12px 12px 32px 12px;
+  border-radius: 16px;
+  box-shadow: 0 10px 24px rgba(27, 67, 50, 0.25);
+  transform: rotate(-4deg);
+  transition: transform 0.3s ease;
+  flex-shrink: 0;
+  width: 220px;
+}
+
+.profile-photo-frame:hover{
+  transform: rotate(0deg);
+}
+
+.profile-photo{
+  width: 100%;
+  height: 220px;
+  border-radius: 10px;
+  object-fit: cover;
+  display: block;
+}
+
+.about-text{
+  flex: 1;
+}
+
 #skills{
   background-color: #F5F3ED;
 }
@@ -213,7 +246,7 @@ input, textarea, select{
   height: 44px;
 }
 
-textarea{
+textarea {
   height: auto;
 }
 
@@ -251,6 +284,20 @@ footer a{
 
   .skills-wrapper{
     flex-direction: column;
+  }
+
+  .about-wrapper{
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .profile-photo-frame{
+    width: 160px;
+    transform: rotate(-3deg);
+  }
+
+  .profile-photo{
+    height: 160px;
   }
 
   h1{
